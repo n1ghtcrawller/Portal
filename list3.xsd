@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="list" type="listType"/>
+  <xs:complexType name="applicType">
+    <xs:sequence>
+      <xs:element name="inlineId">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="app_ALL"/>
+            <xs:enumeration value="app_OPT-2140-401"/>
+            <xs:enumeration value="app_not_OPT-2140-401"/>
+            <xs:enumeration value="app_95007_95008_95010-95048_95050_95052_95055-95058_or_RRJ-27-00041-BD"/>
+            <xs:enumeration value="app_RRJ-27-00041-BD"/>
+            <xs:enumeration value="app_AA"/>
+            <xs:enumeration value="app_BB"/>
+            <xs:enumeration value="app_OPT-2140-402"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="cirID">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ALL"/>
+            <xs:enumeration value="OPT-2140-401"/>
+            <xs:enumeration value="^OPT-2140-401"/>
+            <xs:enumeration value="95007_95008_95010-95048_95050_95052_95055-95058+RRJ-27-00041-BD"/>
+            <xs:enumeration value="RRJ-27-00041-BD"/>
+            <xs:enumeration value="AA"/>
+            <xs:enumeration value="BB"/>
+            <xs:enumeration value="OPT-2140-402"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="applicPropertyType"/>
+      <xs:element type="xs:string" name="applicPropertyIdent"/>
+      <xs:element name="applicPropertyValues">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="95007~95031+95031~95073+95075~95999"/>
+            <xs:enumeration value="95001~95050"/>
+            <xs:enumeration value="^OPT-2140-401"/>
+            <xs:enumeration value="(95007+95008+95010~95048+95050+95052+95055~95058)*^RRJ-27-00041-BD"/>
+            <xs:enumeration value="95041~95121"/>
+            <xs:enumeration value="95010+95012+95020~95035"/>
+            <xs:enumeration value="95010~95021"/>
+            <xs:enumeration value="AA+BB"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="simplePara1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=""/>
+            <xs:enumeration value="НА САМОЛЁТАХ С УСТАНОВЛЕННОЙ ОПЦИЕЙ № 2140-401"/>
+            <xs:enumeration value="НА САМОЛЁТАХ БЕЗ ОПЦИИ № 2140-401"/>
+            <xs:enumeration value="НА САМОЛЁТАХ ПОСЛЕ СБ RRJ–27–00041–БД"/>
+            <xs:enumeration value="Конфигурация АА"/>
+            <xs:enumeration value="Конфигурация BB"/>
+            <xs:enumeration value="НА САМОЛЁТАХ С УСТАНОВЛЕННОЙ ОПЦИЕЙ № 2140-402"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="simplePara2">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=""/>
+            <xs:enumeration value="2140-401"/>
+            <xs:enumeration value="БЕЗ 2140-401"/>
+            <xs:enumeration value="ПОСЛЕ СБ RRJ-27-00041-БД"/>
+            <xs:enumeration value="Конфигурация АА"/>
+            <xs:enumeration value="Конфигурация BB"/>
+            <xs:enumeration value="2140-402"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="simplePara3">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2513-202"/>
+            <xs:enumeration value="2140-401"/>
+            <xs:enumeration value="БЕЗ 2140-401"/>
+            <xs:enumeration value="95007 95008 95010-95048 95050 95052 95055-95058"/>
+            <xs:enumeration value=""/>
+            <xs:enumeration value="2140-402"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="simplePara4">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2513-202"/>
+            <xs:enumeration value="2140-401"/>
+            <xs:enumeration value="БЕЗ 2140-401"/>
+            <xs:enumeration value="95007 95008 95010-95048 95050 95052 95055-95058"/>
+            <xs:enumeration value=""/>
+            <xs:enumeration value="2140-402"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="type"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listType">
+    <xs:sequence>
+      <xs:element type="applicType" name="applic" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="dmoduleType" name="dmodule" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dmoduleType">
+    <xs:sequence>
+      <xs:element type="listType" name="list"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

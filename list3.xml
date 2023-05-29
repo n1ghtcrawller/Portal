@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<list>
+  <dmodule>
+    <list>
+      <applic>
+        <inlineId>app_ALL</inlineId>
+        <cirID>ALL</cirID>
+        <applicPropertyType>prodattr</applicPropertyType>
+        <applicPropertyIdent>oilist</applicPropertyIdent>
+        <applicPropertyValues>95007~95031+95031~95073+95075~95999</applicPropertyValues>
+        <simplePara1></simplePara1>
+        <simplePara2></simplePara2>
+        <simplePara3>2513-202</simplePara3>
+        <simplePara4>2513-202</simplePara4>
+        <type>inline</type>
+      </applic>
+      <applic>
+        <inlineId>app_OPT-2140-401</inlineId>
+        <cirID>OPT-2140-401</cirID>
+        <applicPropertyType>prodattr</applicPropertyType>
+        <applicPropertyIdent>oilist</applicPropertyIdent>
+        <applicPropertyValues>95001~95050</applicPropertyValues>
+        <simplePara1>НА САМОЛЁТАХ С УСТАНОВЛЕННОЙ ОПЦИЕЙ № 2140-401</simplePara1>
+        <simplePara2>2140-401</simplePara2>
+        <simplePara3>2140-401</simplePara3>
+        <simplePara4>2140-401</simplePara4>
+        <type>inline</type>
+      </applic>
+      <applic>
+        <inlineId>app_not_OPT-2140-401</inlineId>
+        <cirID>^OPT-2140-401</cirID>
+        <applicPropertyType>prodattr</applicPropertyType>
+        <applicPropertyIdent>oilist</applicPropertyIdent>
+        <applicPropertyValues>^OPT-2140-401</applicPropertyValues>
+        <simplePara1>НА САМОЛЁТАХ БЕЗ ОПЦИИ № 2140-401</simplePara1>
+        <simplePara2>БЕЗ 2140-401</simplePara2>
+        <simplePara3>БЕЗ 2140-401</simplePara3>
+        <simplePara4>БЕЗ 2140-401</simplePara4>
+        <type>inline</type>
+      </applic>
+      <applic>
+        <inlineId>app_95007_95008_95010-95048_95050_95052_95055-95058_or_RRJ-27-00041-BD</inlineId>
+        <cirID>95007_95008_95010-95048_95050_95052_95055-95058+RRJ-27-00041-BD</cirID>
+        <applicPropertyType>prodattr</applicPropertyType>
+        <applicPropertyIdent>oilist</applicPropertyIdent>
+        <applicPropertyValues>(95007+95008+95010~95048+95050+95052+95055~95058)*^RRJ-27-00041-BD</applicPropertyValues>
+        <simplePara1></simplePara1>
+        <simplePara2></simplePara2>
+        <simplePara3>95007 95008 95010-95048 95050 95052 95055-95058</simplePara3>
+        <simplePara4>95007 95008 95010-95048 95050 95052 95055-95058</simplePara4>
+        <type>inline</type>
+      </applic>
+      <applic>
+				<inlineId>app_RRJ-27-00041-BD</inlineId>
+				<cirID>RRJ-27-00041-BD</cirID>
+				<applicPropertyType>prodattr</applicPropertyType>
+				<applicPropertyIdent>oilist</applicPropertyIdent>
+				<applicPropertyValues>95041~95121</applicPropertyValues>
+				<simplePara1>НА САМОЛЁТАХ ПОСЛЕ СБ RRJ–27–00041–БД</simplePara1>
+				<simplePara2>ПОСЛЕ СБ RRJ-27-00041-БД</simplePara2>
+				<simplePara3></simplePara3>
+				<simplePara4></simplePara4>
+				<type>inline</type>
+			</applic>
+      <applic>
+				<inlineId>app_AA</inlineId>
+				<cirID>AA</cirID>
+				<applicPropertyType>prodattr</applicPropertyType>
+				<applicPropertyIdent>oilist</applicPropertyIdent>
+				<applicPropertyValues>95010+95012+95020~95035</applicPropertyValues>
+				<simplePara1>Конфигурация АА</simplePara1>
+				<simplePara2>Конфигурация АА</simplePara2>
+				<simplePara3></simplePara3>
+				<simplePara4></simplePara4>
+				<type>inline</type>
+			</applic>
+      <applic>
+				<inlineId>app_BB</inlineId>
+				<cirID>BB</cirID>
+				<applicPropertyType>prodattr</applicPropertyType>
+				<applicPropertyIdent>oilist</applicPropertyIdent>
+				<applicPropertyValues>95010~95021</applicPropertyValues>
+				<simplePara1>Конфигурация BB</simplePara1>
+				<simplePara2>Конфигурация BB</simplePara2>
+				<simplePara3></simplePara3>
+				<simplePara4></simplePara4>
+				<type>inline</type>
+			</applic>
+      <applic>
+        <inlineId>app_OPT-2140-402</inlineId>
+        <cirID>OPT-2140-402</cirID>
+        <applicPropertyType>prodattr</applicPropertyType>
+        <applicPropertyIdent>oilist</applicPropertyIdent>
+        <applicPropertyValues>AA+BB</applicPropertyValues>
+        <simplePara1>НА САМОЛЁТАХ С УСТАНОВЛЕННОЙ ОПЦИЕЙ № 2140-402</simplePara1>
+        <simplePara2>2140-402</simplePara2>
+        <simplePara3>2140-402</simplePara3>
+        <simplePara4>2140-402</simplePara4>
+        <type>inline</type>
+      </applic>
+    </list>
+  </dmodule>
+</list>
