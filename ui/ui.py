@@ -14,7 +14,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_input_values(object):
     def setupUi(self, input_values):
         input_values.setObjectName("input_values")
-        input_values.resize(532, 609)
+        input_values.setFixedSize(532, 609)
         font = QtGui.QFont()
         font.setBold(False)
         font.setItalic(False)

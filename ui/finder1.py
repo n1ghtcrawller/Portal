@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_find_cirid(object):
     def setupUi(self, find_cirid):
         find_cirid.setObjectName("find_cirid")
-        find_cirid.resize(531, 612)
+        find_cirid.setFixedSize(531, 612)
         find_cirid.setStyleSheet("background-color: #00BFFF")
         self.cirID = QtWidgets.QLineEdit(parent=find_cirid)
         self.cirID.setGeometry(QtCore.QRect(80, 180, 380, 60))
