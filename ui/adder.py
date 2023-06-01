@@ -13,7 +13,7 @@ def write_object(filename, datas):
     with open(filename, 'w', encoding='utf-8') as file:
         json.dump(datas, file, indent=2)
     file.close()
-
+# добвляем объект в таблицу
 def add_object(cirID, eval, resolve):
     item = {'cirID': cirID, 'evaluate': eval, 'resolve': resolve}
     data["items"].append(item)

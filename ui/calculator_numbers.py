@@ -12,7 +12,7 @@ data = read("objects_file.json")
 
 result_list = []
 
-
+# рекурсивная функция для подмены данных из словаря
 def getNumbersByValue():
     global result_list
     global int_list
@@ -31,7 +31,7 @@ def getNumbersByValue():
         new_json["items"].append(i)
         write_json("new.json", new_json)
     print("2.OK")
-
+#
 def getIndexByEval(Eval):
     lst_index = []
     list_of_cir_id = [i["cirID"] for i in data["items"]]
@@ -42,21 +42,21 @@ def getIndexByEval(Eval):
             continue
     return lst_index
 
-
+# разбиваем строки
 def split_the_list(lst):
     new_list = []
     for i in lst:
         new_list.append(i.split("~"))
     return counter(new_list)
 
-
+# ...
 def counter(lst):
     int_lst = []
     for i in lst:
         int_lst.append((unpacker(i)))
     return del_sames(rewriter(int_lst))
 
-
+# сортируем и перезаписываем данные
 def rewriter(lst):
     length = len(lst)
     new_list = []
@@ -67,7 +67,7 @@ def rewriter(lst):
 
     return new_list
 
-
+# распаковываем внешнесозданный список
 def unpacker(list):
     a = list[0]
     b = list[1]
@@ -77,7 +77,7 @@ def unpacker(list):
     new_list.append(int(list[1]))
     return new_list
 
-
+# записываем в строчку новые строки
 def stringer(lst):
     string = ""
     for i in lst:
@@ -89,7 +89,7 @@ def stringer(lst):
             string += f'{i}+'
     return string
 
-
+# удаляем одинаковые числа в списке
 def del_sames(lst):
     temp = []
     for i in lst:

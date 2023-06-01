@@ -3,7 +3,6 @@ from PyQt6.QtWidgets import QDialog, QTableWidgetItem, QApplication
 from PyQt6.QtGui import QIcon
 from MainTable import Ui_MainWindow
 from start_app import InputValues
-import sys
 from SplitTable import return_values
 import json
 
@@ -44,7 +43,6 @@ class MainTable(QtWidgets.QMainWindow):
         pass
 
     def OpenInputValues(self):
-        open_input_values = QtWidgets.QDialog()
         self.app = InputValues()
         self.app.show()
 
