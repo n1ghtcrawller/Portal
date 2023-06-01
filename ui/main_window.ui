@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>859</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #00BFFF;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="rrj95">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>861</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00BFFF;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>Портал технической поддержки эксплуатанта ВС</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="download">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>120</y>
+      <width>211</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/icons8-загрузить-64 (1).png</normaloff>../../../Downloads/icons8-загрузить-64 (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>144</width>
+      <height>300</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="analyse">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>120</y>
+      <width>211</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/icons8-диаграмма-64 (1).png</normaloff>../../../Downloads/icons8-диаграмма-64 (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>144</width>
+      <height>300</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="register_data">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>120</y>
+      <width>211</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/icons8-тест-пройден-64 (1) (1).png</normaloff>../../../Downloads/icons8-тест-пройден-64 (1) (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>155</width>
+      <height>300</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>320</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
+    <property name="text">
+     <string>Загрузка данных</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>320</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
+    <property name="text">
+     <string>Анализ данных и таблица</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>320</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
+    <property name="text">
+     <string>Регистрация принятых мер</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="analyse_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>370</y>
+      <width>211</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/icons8-анализ-64 (1).png</normaloff>../../../Downloads/icons8-анализ-64 (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>144</width>
+      <height>300</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="analyse_3">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>370</y>
+      <width>211</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/icons8-сетевой-менеджер-64 (1).png</normaloff>../../../Downloads/icons8-сетевой-менеджер-64 (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>144</width>
+      <height>300</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="safety">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>370</y>
+      <width>211</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/icons8-выключить-режим-полета-64 (1).png</normaloff>../../../Downloads/icons8-выключить-режим-полета-64 (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>144</width>
+      <height>300</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>570</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
+    <property name="text">
+     <string>Влияние на БП</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>570</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
+    <property name="text">
+     <string>Система учета и анализа ЭД</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>570</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;</string>
+    </property>
+    <property name="text">
+     <string>Анализ систем интеграции</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
