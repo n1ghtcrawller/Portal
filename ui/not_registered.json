@@ -47,12 +47,6 @@
       "evaluate": "AA+BB",
       "resolve": "95041~95061|95210~95220",
       "is_registered": ""
-    },
-    {
-      "cirID": "opt3",
-      "evaluate": "SU+RRJ",
-      "resolve": "95005~95020",
-      "is_registered": ""
     }
   ]
 }

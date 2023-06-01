@@ -20,7 +20,13 @@ def add_object(cirID, eval, resolve):
     write_object('new.json', data)
 
 
+def return_not_registered_values(i, item):
+    return data["items"][i][item]
+
+
 def get_registered(cirID, eval, resolve, is_registered, index):
     if data["items"][index][is_registered] == "yes":
         add_object(data["items"][index][cirID], data["items"][index][eval], data["items"][index][resolve])
         del data["items"][index][is_registered]
+
+

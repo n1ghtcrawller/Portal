@@ -5,7 +5,7 @@ from main_window import Ui_MainWindow
 import sys
 from start_app import InputValues
 from MainTableLogic import MainTable
-
+from registration_logic import RegisterTable
 
 class MainMenu(QtWidgets.QMainWindow):
     def __init__(self):
@@ -18,7 +18,7 @@ class MainMenu(QtWidgets.QMainWindow):
         self.setWindowIcon(QIcon('airplane_icon-120x120.png'))
         self.ui.download.clicked.connect(self.OpenInputValues)
         self.ui.analyse.clicked.connect(self.OpenMainTable)
-
+        self.ui.register_data.clicked.connect(self.OpenRegisterTable)
     def OpenMainTable(self):
         self.app = MainTable()
         self.app.show()
@@ -26,6 +26,11 @@ class MainMenu(QtWidgets.QMainWindow):
     def OpenInputValues(self):
         self.app = InputValues()
         self.app.show()
+
+    def OpenRegisterTable(self):
+        self.app = RegisterTable()
+        self.app.show()
+
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
