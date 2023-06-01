@@ -48,10 +48,3 @@ class MainTable(QtWidgets.QMainWindow):
         self.app = InputValues()
         self.app.show()
 
-
-if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    input_values = QtWidgets.QMainWindow()
-    application = MainTable()
-    application.show()
-    sys.exit(app.exec())
