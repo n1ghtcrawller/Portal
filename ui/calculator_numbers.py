@@ -29,7 +29,7 @@ def getNumbersByValue():
                 i["resolve"] = returner(index)
 
         new_json["items"].append(i)
-        write_json("new.json", new_json)
+        write_json("not_registered.json", new_json)
     print("2.OK")
 #
 def getIndexByEval(Eval):

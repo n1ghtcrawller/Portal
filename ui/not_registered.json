@@ -3,47 +3,55 @@
     {
       "cirID": "ALL",
       "evaluate": "",
-      "resolve": "95001~95999"
+      "resolve": "95001~95999",
+      "is_registered": ""
     },
     {
       "cirID": "RRJ",
       "evaluate": "",
-      "resolve": "95005~95015"
+      "resolve": "95005~95015",
+      "is_registered": ""
     },
     {
       "cirID": "SU",
       "evaluate": "",
-      "resolve": "95010~95020"
+      "resolve": "95010~95020",
+      "is_registered": ""
     },
     {
       "cirID": "opt1",
       "evaluate": "SU+AA+RRJ",
-      "resolve": ""
+      "resolve": "95005~95020|95041~95061",
+      "is_registered": ""
     },
     {
       "cirID": "RRJ-27-00041-BD",
       "evaluate": "RRJ+SU+BB",
-      "resolve": ""
+      "resolve": "95005~95020|95210~95220",
+      "is_registered": ""
     },
     {
       "cirID": "AA",
       "evaluate": "",
-      "resolve": "95041~95061"
+      "resolve": "95041~95061",
+      "is_registered": ""
     },
     {
       "cirID": "BB",
       "evaluate": "",
-      "resolve": "95210~95220"
+      "resolve": "95210~95220",
+      "is_registered": ""
     },
     {
       "cirID": "opt2",
       "evaluate": "AA+BB",
-      "resolve": ""
+      "resolve": "95041~95061|95210~95220",
+      "is_registered": ""
     },
     {
       "cirID": "opt3",
       "evaluate": "SU+RRJ",
-      "resolve": "",
+      "resolve": "95005~95020",
       "is_registered": ""
     }
   ]
