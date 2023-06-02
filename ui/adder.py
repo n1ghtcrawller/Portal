@@ -6,7 +6,7 @@ def read(filename):
         return json.load(file)
 
 
-data = read("objects_file.json")
+data = read("new.json")
 
 
 def write_object(filename, datas):

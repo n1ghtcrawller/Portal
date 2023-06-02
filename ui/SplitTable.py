@@ -13,3 +13,5 @@ def return_values(i, item):
     return data["items"][i][item]
 
 
+def delete_item(cirID):
+    pass

@@ -1,3 +1,4 @@
+from dialog_register_logic import Registrate
 from registration import return_not_registered_values
 import json
 from PyQt6 import QtWidgets
@@ -37,3 +38,9 @@ class RegisterTable(QtWidgets.QMainWindow):
 
     def initUI(self):
         self.setWindowIcon(QIcon('airplane_icon-120x120.png'))
+        self.ui.pushButton.clicked.connect(self.OpenRegistrationDialog)
+        self.ui.pushButton_2.clicked.connect(self.close)
+
+    def OpenRegistrationDialog(self):
+        self.app = Registrate()
+        self.app.show()

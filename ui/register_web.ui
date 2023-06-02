@@ -48,7 +48,7 @@ color: white;</string>
       <x>70</x>
       <y>100</y>
       <width>680</width>
-      <height>471</height>
+      <height>391</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -58,6 +58,60 @@ color: #00BFFF</string>
     <attribute name="horizontalHeaderDefaultSectionSize">
      <number>170</number>
     </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>510</y>
+      <width>331</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: #00BFFF;
+	background-color: white;
+	border: 2px solid rgb(59, 131, 189);
+	border-radius: 30;
+}
+
+QPushButton:pressed {
+background-color: rgb(200, 255, 255);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>РЕГИСТРАЦИЯ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>510</y>
+      <width>321</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: #00BFFF;
+	background-color: white;
+	border: 2px solid rgb(59, 131, 189);
+	border-radius: 30;
+}
+
+QPushButton:pressed {
+background-color: rgb(200, 255, 255);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>ЗАКРЫТЬ</string>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

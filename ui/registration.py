@@ -1,32 +1,45 @@
 import json
 
+def return_not_registered_values(i, item):
+    return data["items"][i][item]
+
 
 def read(filename):
     with open(filename, 'r', encoding="UTF-8") as file:
         return json.load(file)
 
 
-data = read("not_registered.json")
-
-def write_object(filename, datas):
+def write_json(filename, datas):
     with open(filename, 'w', encoding='utf-8') as file:
         json.dump(datas, file, indent=2)
     file.close()
 
 
-def add_object(cirID, eval, resolve):
-    item = {'cirID': cirID, 'evaluate': eval, 'resolve': resolve}
-    data["items"].append(item)
-    write_object('new.json', data)
+A = []
+B = []
+data = read("not_registered.json")
+for i in data["items"]:
+    A.append(i["cirID"])
 
 
-def return_not_registered_values(i, item):
-    return data["items"][i][item]
+def finder(cirID):
+    try:
+        indexA = A.index(cirID)
+        result = f'Идентификатор {cirID} найден. Зарегестрировать?'
+        return result
+    except Exception as result:
+        result = 'Идентификатор не найден.'
+        return result
 
 
-def get_registered(cirID, eval, resolve, is_registered, index):
-    if data["items"][index][is_registered] == "yes":
-        add_object(data["items"][index][cirID], data["items"][index][eval], data["items"][index][resolve])
-        del data["items"][index][is_registered]
+def registration_data(cirID):
+    indexA = A.index(cirID)
+    data["items"][indexA]["is_registered"] = "yes"
+    write_json("new.json", data)
+    del data["items"][indexA]
+
+
+
+
 
 
