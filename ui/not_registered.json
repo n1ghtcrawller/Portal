@@ -1,30 +1,6 @@
 {
   "items": [
     {
-      "cirID": "ALL",
-      "evaluate": "",
-      "resolve": "95001~95999",
-      "is_registered": ""
-    },
-    {
-      "cirID": "RRJ",
-      "evaluate": "",
-      "resolve": "95005~95015",
-      "is_registered": ""
-    },
-    {
-      "cirID": "SU",
-      "evaluate": "",
-      "resolve": "95010~95020",
-      "is_registered": ""
-    },
-    {
-      "cirID": "opt1",
-      "evaluate": "SU+AA+RRJ",
-      "resolve": "95005~95020|95041~95061",
-      "is_registered": ""
-    },
-    {
       "cirID": "RRJ-27-00041-BD",
       "evaluate": "RRJ+SU+BB",
       "resolve": "95005~95020|95210~95220",

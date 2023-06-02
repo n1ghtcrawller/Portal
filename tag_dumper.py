@@ -4,4 +4,3 @@ with open("list3.xml") as file:
     src = file.read()
 
 soup = BeautifulSoup(src, 'lxml')
-print(soup)

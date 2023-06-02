@@ -17,6 +17,7 @@ def write_json(filename, datas):
 
 A = []
 B = []
+new_data = read("new.json")
 data = read("not_registered.json")
 for i in data["items"]:
     A.append(i["cirID"])
@@ -34,12 +35,20 @@ def finder(cirID):
 
 def registration_data(cirID):
     indexA = A.index(cirID)
-    data["items"][indexA]["is_registered"] = "yes"
-    write_json("new.json", data)
+    new_data_item = data["items"][indexA]
+    new_data["items"].append(new_data_item)
     del data["items"][indexA]
+    write_json("not_registered.json", data)
+    write_json("new.json", new_data)
 
 
+def transport(cirID):
+    try:
+        registration_data(cirID)
 
+    except Exception as e:
+        return e
 
-
-
+# print(transport(""))
+# print(data["items"])
+# print(new_data["items"])

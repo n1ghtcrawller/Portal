@@ -7,7 +7,7 @@ def read(filename):
         return json.load(file)
 
 
-data = read("objects_file.json")
+data = read("not_registered.json")
 
 
 result_list = []
@@ -108,5 +108,5 @@ def write_json(filename, datas):
     file.close()
 
 
-getNumbersByValue()
+
 
